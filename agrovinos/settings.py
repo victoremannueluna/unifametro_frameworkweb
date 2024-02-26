@@ -84,11 +84,6 @@ DATABASES = {
     #    "ENGINE": "django.db.backends.sqlite3",
     #    "NAME": BASE_DIR / "db.sqlite3",
     #}
-    DATABASES = {
-    #"default": {
-    #    "ENGINE": "django.db.backends.sqlite3",
-    #    "NAME": BASE_DIR / "db.sqlite3",
-    #}
     "default": {
         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.postgresql"),
         "NAME": os.environ.get("SQL_DATABASE", "agrovinos"),
