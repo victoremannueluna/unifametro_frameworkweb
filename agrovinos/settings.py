@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ovino', 
+    'tag',
+    'sekizai',
+    'widget_tweaks',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

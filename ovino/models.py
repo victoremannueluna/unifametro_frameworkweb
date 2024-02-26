@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Ovino(models.Model):
-    
+    tag = models.OneToOneField(Tag, on_delete=models.SET_NULL, null=True)
     identificador = models.CharField(max_length=16, unique=True)
     peso = models.FloatField()
     nascimento = models.DateTimeField()
